@@ -45,7 +45,7 @@ public class PlayerController : MonoBehaviour {
     [SerializeField] GameObject savingPlatform;
     int savingPlatformCount = 3;
     bool savingPlatformActive = false;
-    bool hasTeleported = false;
+    [HideInInspector] public bool hasTeleported = false;
 
     //PowerUp
     bool hasWindPower = false;
@@ -165,8 +165,8 @@ public class PlayerController : MonoBehaviour {
 
         if (collision.tag == "Portal" && hasTeleported == false) {
 
+            cam.GetComponent<MoveCamera>().teleportedToPlayer = false;
             hasTeleported = true;
-            collision.gameObject.GetComponent<Collider2D>().enabled = false;
             GameObject[] portals = GameObject.FindGameObjectsWithTag("Portal");
             Transform CurPortal;
             
@@ -180,7 +180,7 @@ public class PlayerController : MonoBehaviour {
     }
 
     IEnumerator PortalCooldown() {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(3);
         hasTeleported = false;
     }
 
@@ -190,14 +190,13 @@ public class PlayerController : MonoBehaviour {
     private void SavingPortal()
     {
 
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetMouseButtonDown(0))
         {
 
-            Vector3 mousePos = Input.mousePosition;
-            if (mousePos.x > -3 && mousePos.x < 3 && mousePos.y > -6 && mousePos.y < -2)
-            {
+            Vector2 mousePos = Input.mousePosition;
+            Vector2 objectPos = Camera.main.ScreenToWorldPoint(mousePos);
+            if (objectPos.y < 0) {
 
-                Vector3 objectPos = Camera.main.ScreenToWorldPoint(mousePos);
                 Instantiate(portal, objectPos, Quaternion.identity);
             }
         }

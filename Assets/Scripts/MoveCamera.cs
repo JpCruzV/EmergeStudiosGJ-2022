@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class MoveCamera : MonoBehaviour {
 
-    [SerializeField] Transform playerRef;
+    [SerializeField] GameObject playerRef;
     [SerializeField] Transform EndRef;
     [HideInInspector] public bool onPlayer = false;
     Vector3 endPos;
     Vector3 playerPos;
     bool stopCinematic = false;
+    [HideInInspector] public bool teleportedToPlayer = false;
 
     private void Start() {
 
@@ -22,6 +23,12 @@ public class MoveCamera : MonoBehaviour {
 
 
         playerPos = new Vector3(playerRef.transform.position.x + 10, 0, -10);
+
+        if (playerRef.GetComponent<PlayerController>().hasTeleported == true && teleportedToPlayer == false) {
+
+            teleportedToPlayer = true;
+            transform.position = new Vector3(playerPos.x , playerPos.y);
+        }
 
         if(transform.position != playerPos) {
 
