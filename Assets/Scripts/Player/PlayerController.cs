@@ -46,6 +46,8 @@ public class PlayerController : MonoBehaviour {
     int savingPlatformCount = 3;
     bool savingPlatformActive = false;
     [HideInInspector] public bool hasTeleported = false;
+    bool onCannon = false;
+    bool hasShot = false;
 
     //PowerUp
     bool hasWindPower = false;
@@ -54,7 +56,6 @@ public class PlayerController : MonoBehaviour {
 
     float buttonCooldown = .5f;
     int buttonCount = 0;
-
 
     void myInput() {
 
@@ -72,10 +73,10 @@ public class PlayerController : MonoBehaviour {
         }
 
 
-        else if (Input.GetKeyDown(KeyCode.Space) && OnVine == false && savingPlatformCount != 0 && savingPlatformActive == false) {
+        else if (Input.GetKeyDown(KeyCode.Space) && OnVine == false && onCannon == true) {
 
-            savingPlatformActive = true;
-            StartCoroutine(ActivateSavingPlatform());
+            hasShot = true;
+            onCannon = false;
         }
 
 
@@ -177,12 +178,29 @@ public class PlayerController : MonoBehaviour {
             transform.position = new Vector3(CurPortal.position.x, CurPortal.position.y);
             StartCoroutine(PortalCooldown());
         }
+
+        if (collision.tag == "Cannon") {
+
+            rb.constraints = RigidbodyConstraints2D.FreezePosition;
+            rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+        }
     }
+
+    //IEnumerator waitingForShot() {
+        /*
+        While (hasShot == false) {
+
+            
+            yield return new WaitForSeconds(1);
+        }
+        */
+    //}
 
     IEnumerator PortalCooldown() {
         yield return new WaitForSeconds(3);
         hasTeleported = false;
     }
+
 
     [SerializeField] GameObject portal;
 

@@ -19,15 +19,6 @@ public class Platforms : MonoBehaviour {
     }
 
 
-    private void Start() {
-
-        if (id == 1) {
-
-            sprite.color = new Color(0, 0, .8f, .8f);
-        }
-    }
-
-
     private void OnCollisionEnter2D(Collision2D collision) {
 
 

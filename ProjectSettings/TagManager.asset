@@ -8,6 +8,8 @@ TagManager:
   - Wind
   - Fire
   - Ending
+  - Portal
+  - Cannon
   layers:
   - Default
   - TransparentFX
