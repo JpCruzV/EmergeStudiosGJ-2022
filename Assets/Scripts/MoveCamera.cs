@@ -6,7 +6,6 @@ public class MoveCamera : MonoBehaviour {
 
     [SerializeField] Transform playerRef;
     [SerializeField] Transform EndRef;
-    [SerializeField] GameObject borders;
     [HideInInspector] public bool onPlayer = false;
     Vector3 endPos;
     Vector3 playerPos;
@@ -16,7 +15,6 @@ public class MoveCamera : MonoBehaviour {
 
         endPos = new Vector3(EndRef.transform.position.x, 0, -10);
         transform.position = endPos;
-        borders.SetActive(false);
     }
 
 
@@ -27,19 +25,18 @@ public class MoveCamera : MonoBehaviour {
 
         if(transform.position != playerPos) {
 
-            transform.position = Vector3.MoveTowards(transform.position, playerPos, Time.deltaTime * 5);
+            transform.position = Vector3.MoveTowards(transform.position, playerPos, Time.deltaTime * 15);
         }
 
         if (this.transform.position == playerPos && stopCinematic == false) {
 
             stopCinematic = true;
-            borders.SetActive(true);
             onPlayer = true;
         }
 
         else {
 
-            Vector3.Lerp(transform.position, playerPos, 5);
+            Vector3.Lerp(transform.position, playerPos, 10);
         }
     }
 }

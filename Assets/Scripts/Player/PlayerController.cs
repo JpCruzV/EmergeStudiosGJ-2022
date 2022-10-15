@@ -30,26 +30,10 @@ public class PlayerController : MonoBehaviour {
             curHook.GetComponent<SwingingRope>().destiny = destiny;
         }
     }
-
-    private void OnTriggerEnter2D(Collider2D collision) {
-
-        if (collision.tag == "Vine") {
-
-            destiny = collision.transform.position;
-            OnVine = true;
-        }
-
-        if(collision.tag == "Wind") {
-
-            hasWindPower = true;
-        }
-    }
-
     #endregion
 
 
     GameObject cam;
-    bool playerCanMove = false;
 
     [Header("Movement")]
     [SerializeField] float speed;
@@ -64,6 +48,7 @@ public class PlayerController : MonoBehaviour {
 
     //PowerUp
     bool hasWindPower = false;
+    [HideInInspector] public bool hasFirePower = false;
 
     float buttonCooldown = .5f;
     int buttonCount = 0;
@@ -71,9 +56,12 @@ public class PlayerController : MonoBehaviour {
 
     void myInput() {
 
-        HorizontalInput = Input.GetAxis("Horizontal");
-        Vector2 dir = new Vector2(HorizontalInput, 0);
-        rb.AddForce(dir * speed, ForceMode2D.Impulse);
+        if (cam.GetComponent<MoveCamera>().onPlayer == true) {
+
+            HorizontalInput = Input.GetAxis("Horizontal");
+            Vector2 dir = new Vector2(HorizontalInput, 0);
+            rb.AddForce(dir * speed, ForceMode2D.Impulse);
+        }
 
         if (Input.GetKeyDown(KeyCode.Space) && OnVine == true) {
 
@@ -124,26 +112,45 @@ public class PlayerController : MonoBehaviour {
     }
 
 
+    private void Awake() {
+
+        rb = GetComponent<Rigidbody2D>();
+        cam = GameObject.FindGameObjectWithTag("MainCamera");
+    }
+
+
     private void Start() {
 
         savingPlatform.SetActive(false);
-        rb = GetComponent<Rigidbody2D>();
-        rb.constraints = RigidbodyConstraints2D.FreezePosition;
-        rb.constraints = RigidbodyConstraints2D.FreezeRotation;
-        cam = GameObject.FindGameObjectWithTag("MainCamera");
     }
 
 
     private void Update() {
 
-        if (cam.GetComponent<MoveCamera>().onPlayer == true && playerCanMove == false) {
-
-            playerCanMove = true;
-            rb.constraints = RigidbodyConstraints2D.None;
-            rb.constraints = RigidbodyConstraints2D.FreezeRotation;
-        }
-
         myInput();
         VineLogic();
+    }
+
+
+    private void OnTriggerEnter2D(Collider2D collision) {
+
+        if (collision.tag == "Vine")
+        {
+
+            destiny = collision.transform.position;
+            OnVine = true;
+        }
+
+        if (collision.tag == "Wind")
+        {
+
+            hasWindPower = true;
+        }
+
+        if (collision.tag == "Fire")
+        {
+
+            hasFirePower = true;
+        }
     }
 }
