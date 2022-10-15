@@ -49,6 +49,7 @@ public class PlayerController : MonoBehaviour {
     //PowerUp
     bool hasWindPower = false;
     [HideInInspector] public bool hasFirePower = false;
+    SpriteRenderer sprite;
 
     float buttonCooldown = .5f;
     int buttonCount = 0;
@@ -114,6 +115,7 @@ public class PlayerController : MonoBehaviour {
 
     private void Awake() {
 
+        sprite = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
         cam = GameObject.FindGameObjectWithTag("MainCamera");
     }
@@ -151,6 +153,12 @@ public class PlayerController : MonoBehaviour {
         {
 
             hasFirePower = true;
+            sprite.color = new Color(1, 0, 0, .8f);
+        }
+
+        if (hasFirePower == false) {
+
+            sprite.color = new Color(1, 1, 1, 1f);
         }
     }
 }

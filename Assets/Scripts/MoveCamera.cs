@@ -21,7 +21,7 @@ public class MoveCamera : MonoBehaviour {
     private void Update() {
 
 
-        playerPos = new Vector3(playerRef.transform.position.x + 2, 0, -10);
+        playerPos = new Vector3(playerRef.transform.position.x + 10, 0, -10);
 
         if(transform.position != playerPos) {
 

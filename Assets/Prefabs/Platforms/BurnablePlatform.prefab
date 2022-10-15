@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 8932237033660005748}
   - component: {fileID: 8932237033660005747}
   - component: {fileID: 8932237033660005746}
-  - component: {fileID: 8932237033660005745}
+  - component: {fileID: -4679721479537967729}
+  - component: {fileID: 8736838005675670748}
   m_Layer: 0
   m_Name: BurnablePlatform
   m_TagString: Untagged
@@ -112,7 +113,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &8932237033660005745
+--- !u!114 &-4679721479537967729
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -121,6 +122,29 @@ MonoBehaviour:
   m_GameObject: {fileID: 8932237033660005744}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2566bd8a4cc7b1a45b191364ed133643, type: 3}
+  m_Script: {fileID: 11500000, guid: bc49ba23fe4096e47b1f05010415fafa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 8736838005675670748}
+  force: 0
+  id: 2
+--- !u!95 &8736838005675670748
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8932237033660005744}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
