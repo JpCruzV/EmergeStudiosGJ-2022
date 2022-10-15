@@ -28,7 +28,7 @@ public class SwingingRope : MonoBehaviour {
         transform.position = Vector2.MoveTowards(transform.position, destiny, speed);
 
 
-        if (player.GetComponent<PlayerController>().OnRangeFromVine == false) {
+        if (player.GetComponent<PlayerController>().OnVine == false) {
 
             Destroy(this.gameObject);
         }
