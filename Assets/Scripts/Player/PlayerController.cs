@@ -41,10 +41,7 @@ public class PlayerController : MonoBehaviour {
     Rigidbody2D rb;
     float HorizontalInput;
 
-    [Header("Saving Platform")]
-    [SerializeField] GameObject savingPlatform;
-    int savingPlatformCount = 3;
-    bool savingPlatformActive = false;
+
     [HideInInspector] public bool hasTeleported = false;
     bool onCannon = false;
     bool hasShot = false;
@@ -59,7 +56,7 @@ public class PlayerController : MonoBehaviour {
 
     void myInput() {
 
-        if (cam.GetComponent<MoveCamera>().onPlayer == true) {
+        if (cam.GetComponent<MoveCamera>().onPlayer == true || onCannon == true) {
 
             HorizontalInput = Input.GetAxis("Horizontal");
             Vector2 dir = new Vector2(HorizontalInput, 0);
@@ -77,6 +74,8 @@ public class PlayerController : MonoBehaviour {
 
             hasShot = true;
             onCannon = false;
+            this.rb.gravityScale = 1;
+
         }
 
 
@@ -105,14 +104,6 @@ public class PlayerController : MonoBehaviour {
     }
 
 
-    IEnumerator ActivateSavingPlatform() {
-
-        savingPlatform.SetActive(true);
-        yield return new WaitForSeconds(5);
-
-        savingPlatform.SetActive(false);
-        savingPlatformActive = false;
-    }
 
 
     private void Awake() {
@@ -120,12 +111,6 @@ public class PlayerController : MonoBehaviour {
         sprite = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
         cam = GameObject.FindGameObjectWithTag("MainCamera");
-    }
-
-
-    private void Start() {
-
-        savingPlatform.SetActive(false);
     }
 
 
@@ -179,22 +164,24 @@ public class PlayerController : MonoBehaviour {
             StartCoroutine(PortalCooldown());
         }
 
-        if (collision.tag == "Cannon") {
+        if (collision.tag == "Cannon" && onCannon == false) {
 
-            rb.constraints = RigidbodyConstraints2D.FreezePosition;
-            rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+            onCannon = true;
+            this.rb.gravityScale = 0;
+            StartCoroutine(waitingForShot());
         }
     }
 
-    //IEnumerator waitingForShot() {
-        /*
-        While (hasShot == false) {
+    IEnumerator waitingForShot() {
+        
+        while (hasShot == false) {
 
-            
-            yield return new WaitForSeconds(1);
+            Quaternion rotateTo = Quaternion.Euler(0, 0, 30);
+            transform.rotation = Quaternion.Slerp(transform.rotation, rotateTo, Time.deltaTime * 10);
+            yield return new WaitForSeconds(1.5f);
         }
-        */
-    //}
+        
+    }
 
     IEnumerator PortalCooldown() {
         yield return new WaitForSeconds(3);
@@ -205,11 +192,9 @@ public class PlayerController : MonoBehaviour {
     [SerializeField] GameObject portal;
 
 
-    private void SavingPortal()
-    {
+    private void SavingPortal() {
 
-        if (Input.GetMouseButtonDown(0))
-        {
+        if (Input.GetMouseButtonDown(0)) {
 
             Vector2 mousePos = Input.mousePosition;
             Vector2 objectPos = Camera.main.ScreenToWorldPoint(mousePos);
