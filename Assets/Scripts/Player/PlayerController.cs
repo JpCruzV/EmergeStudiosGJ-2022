@@ -45,6 +45,7 @@ public class PlayerController : MonoBehaviour {
     [SerializeField] GameObject savingPlatform;
     int savingPlatformCount = 3;
     bool savingPlatformActive = false;
+    bool hasTeleported = false;
 
     //PowerUp
     bool hasWindPower = false;
@@ -129,6 +130,7 @@ public class PlayerController : MonoBehaviour {
 
     private void Update() {
 
+        SavingPortal();
         myInput();
         VineLogic();
     }
@@ -159,6 +161,45 @@ public class PlayerController : MonoBehaviour {
         if (hasFirePower == false) {
 
             sprite.color = new Color(1, 1, 1, 1f);
+        }
+
+        if (collision.tag == "Portal" && hasTeleported == false) {
+
+            hasTeleported = true;
+            collision.gameObject.GetComponent<Collider2D>().enabled = false;
+            GameObject[] portals = GameObject.FindGameObjectsWithTag("Portal");
+            Transform CurPortal;
+            
+            do {
+                CurPortal = portals[Random.Range(0, portals.Length)].transform;
+            }
+            while (Vector3.Distance(CurPortal.position, this.transform.position) < 2);
+            transform.position = new Vector3(CurPortal.position.x, CurPortal.position.y);
+            StartCoroutine(PortalCooldown());
+        }
+    }
+
+    IEnumerator PortalCooldown() {
+        yield return new WaitForSeconds(5);
+        hasTeleported = false;
+    }
+
+    [SerializeField] GameObject portal;
+
+
+    private void SavingPortal()
+    {
+
+        if (Input.GetButtonDown("Fire1"))
+        {
+
+            Vector3 mousePos = Input.mousePosition;
+            if (mousePos.x > -3 && mousePos.x < 3 && mousePos.y > -6 && mousePos.y < -2)
+            {
+
+                Vector3 objectPos = Camera.main.ScreenToWorldPoint(mousePos);
+                Instantiate(portal, objectPos, Quaternion.identity);
+            }
         }
     }
 }
