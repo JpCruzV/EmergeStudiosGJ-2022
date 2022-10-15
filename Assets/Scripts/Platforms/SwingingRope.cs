@@ -9,8 +9,9 @@ public class SwingingRope : MonoBehaviour {
     [SerializeField] float speed = 1;
     [SerializeField] float dist = 2;
     [SerializeField] GameObject nodePrefab;
-    public GameObject player;
-    public GameObject lastNode;
+
+    [HideInInspector] public GameObject player;
+    [HideInInspector] public GameObject lastNode;
 
     bool done = false;
 
@@ -26,6 +27,13 @@ public class SwingingRope : MonoBehaviour {
 
         transform.position = Vector2.MoveTowards(transform.position, destiny, speed);
 
+
+        if (player.GetComponent<PlayerController>().OnRangeFromVine == false) {
+
+            Destroy(this.gameObject);
+        }
+
+
         if ((Vector2)transform.position != destiny) {
 
             if (Vector2.Distance(player.transform.position, lastNode.transform.position) > dist) {
@@ -37,7 +45,6 @@ public class SwingingRope : MonoBehaviour {
 
             done = true;
             lastNode.GetComponent<HingeJoint2D>().connectedBody = player.GetComponent<Rigidbody2D>();
-
         }
     }
 

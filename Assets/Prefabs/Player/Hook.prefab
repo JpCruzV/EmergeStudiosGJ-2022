@@ -163,7 +163,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destiny: {x: 0, y: 0}
   speed: 1
-  dist: 1
+  dist: 0.5
   nodePrefab: {fileID: 8044965594733930628, guid: 9060b00ebd4887c40bbce94e12da55c3, type: 3}
   player: {fileID: 0}
   lastNode: {fileID: 0}
