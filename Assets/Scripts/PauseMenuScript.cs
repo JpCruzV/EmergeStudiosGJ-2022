@@ -9,6 +9,10 @@ public class PauseMenuScript : MonoBehaviour {
     public static bool gameIsPaused = false;
     [SerializeField] GameObject pauseUI;
 
+    private void Start()
+    {
+        pauseUI.SetActive(false);
+    }
     private void Update() {
         
         if (Input.GetKeyDown(KeyCode.Escape)) {

@@ -95046,6 +95046,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c215c5d2c41285d44afad0983802815d, type: 3}
+--- !u!1 &2038217425 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 381380835, guid: a060c576a136d1845ab5216c90b922ed, type: 3}
+  m_PrefabInstance: {fileID: 1917368511}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2038887165
 GameObject:
   m_ObjectHideFlags: 0
@@ -101351,5 +101356,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: VictoryPortal
       objectReference: {fileID: 0}
+    - target: {fileID: 7894379624686854495, guid: b3c77042cb0ce2f48bcb69180000ed87, type: 3}
+      propertyPath: victoryUI
+      value: 
+      objectReference: {fileID: 2038217425}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b3c77042cb0ce2f48bcb69180000ed87, type: 3}

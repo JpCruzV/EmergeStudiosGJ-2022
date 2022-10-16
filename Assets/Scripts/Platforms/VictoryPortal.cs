@@ -8,6 +8,10 @@ public class VictoryPortal : MonoBehaviour {
     public static bool gameIsWon = false;
     [SerializeField] GameObject victoryUI;
 
+    private void Start()
+    {
+        victoryUI.SetActive(false);
+    }
     private void OnTriggerEnter2D(Collider2D collision) {
         
         if (collision.tag == "Player") {
