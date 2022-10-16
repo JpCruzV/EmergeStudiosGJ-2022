@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c5e245158f0dba949bafaae87dfc73de
+guid: 5f879678161efad4590f9b52a35e2a9d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -153,12 +153,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: LLaves_ConBrillos_0
+      name: Plataforma_Candado_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 43
+        width: 110
         height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -167,19 +167,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d532d533c40f39f47bf73b1cff77c65c
-      internalID: -1820212751
+      spriteID: 0fe48b3c9f656ec42a01bdddf3572609
+      internalID: 895987604
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LLaves_ConBrillos_1
+      name: Plataforma_Candado_1
       rect:
         serializedVersion: 2
-        x: 51
+        x: 110
         y: 0
-        width: 43
+        width: 110
         height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -188,19 +188,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 93caa1bcab7326343b03fb2d7c14c314
-      internalID: -812866265
+      spriteID: 83ceeebf650cdfc429d10b6354f418ba
+      internalID: 904352273
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LLaves_ConBrillos_2
+      name: Plataforma_Candado_2
       rect:
         serializedVersion: 2
-        x: 102
+        x: 220
         y: 0
-        width: 43
+        width: 110
         height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -209,19 +209,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54a7c6aae49ef72468aba0fc6165b43d
-      internalID: 272813527
+      spriteID: f3caf94a81953e9478a07b4aa18c2421
+      internalID: -2124462190
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LLaves_ConBrillos_3
+      name: Plataforma_Candado_3
       rect:
         serializedVersion: 2
-        x: 153
+        x: 330
         y: 0
-        width: 43
+        width: 110
         height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -230,19 +230,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88d3485115d944549bdbd2391a7daabe
-      internalID: 638413837
+      spriteID: c6b6d67d4234ccd44af893b154a17911
+      internalID: 232368489
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LLaves_ConBrillos_4
+      name: Plataforma_Candado_4
       rect:
         serializedVersion: 2
-        x: 204
+        x: 440
         y: 0
-        width: 43
+        width: 110
         height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -251,19 +251,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d4f5254463247ae4e977b1dbc5331f00
-      internalID: -741807435
+      spriteID: 28aef30d46cddb4468b2beafa805af8b
+      internalID: -1774315670
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LLaves_ConBrillos_5
+      name: Plataforma_Candado_5
       rect:
         serializedVersion: 2
-        x: 255
+        x: 550
         y: 0
-        width: 43
+        width: 110
         height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -272,19 +272,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 496bd42ded494eb43991d59f29b0bb17
-      internalID: -2137223393
+      spriteID: 0a0409d689a3a5149807cab22ebd4adf
+      internalID: -1643543297
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LLaves_ConBrillos_6
+      name: Plataforma_Candado_6
       rect:
         serializedVersion: 2
-        x: 306
+        x: 660
         y: 0
-        width: 43
+        width: 110
         height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -293,19 +293,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b132755fa8149d548aa69ae29ab84689
-      internalID: 1538266636
+      spriteID: 607d8da977f7252488d4c7d405322139
+      internalID: -1290751271
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LLaves_ConBrillos_7
+      name: Plataforma_Candado_7
       rect:
         serializedVersion: 2
-        x: 357
+        x: 770
         y: 0
-        width: 43
+        width: 110
         height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -314,8 +314,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 74b41b2a5de996043bfc42d3bd867936
-      internalID: -824832422
+      spriteID: 1e4e180aa68cc554c9af3040c65f165b
+      internalID: 1508581111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plataforma_Candado_8
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 0
+        width: 110
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2f2e6cc425c6f94485500298a7653c0
+      internalID: 1698571451
       vertices: []
       indices: 
       edges: []
@@ -331,14 +352,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      LLaves_ConBrillos_1: -812866265
-      LLaves_ConBrillos_6: 1538266636
-      LLaves_ConBrillos_0: -1820212751
-      LLaves_ConBrillos_5: -2137223393
-      LLaves_ConBrillos_7: -824832422
-      LLaves_ConBrillos_3: 638413837
-      LLaves_ConBrillos_2: 272813527
-      LLaves_ConBrillos_4: -741807435
+      Plataforma_Candado_8: 1698571451
+      Plataforma_Candado_1: 904352273
+      Plataforma_Candado_2: -2124462190
+      Plataforma_Candado_7: 1508581111
+      Plataforma_Candado_3: 232368489
+      Plataforma_Candado_5: -1643543297
+      Plataforma_Candado_4: -1774315670
+      Plataforma_Candado_6: -1290751271
+      Plataforma_Candado_0: 895987604
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
