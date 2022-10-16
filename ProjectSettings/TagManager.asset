@@ -12,6 +12,7 @@ TagManager:
   - Cannon
   - Spikes
   - Burnable
+  - Victory
   layers:
   - Default
   - TransparentFX
