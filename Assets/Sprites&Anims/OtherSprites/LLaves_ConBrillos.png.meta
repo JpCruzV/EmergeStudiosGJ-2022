@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: fc5279d2c4aa3d3448d74d81a8ef7957
+guid: c5e245158f0dba949bafaae87dfc73de
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -153,13 +153,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fuego_Barril_0
+      name: LLaves_ConBrillos_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 2
-        width: 25
-        height: 39
+        x: 0
+        y: 0
+        width: 43
+        height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,20 +167,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec67a0fc5abcb364b871f3a2342adccd
-      internalID: -349737009
+      spriteID: d532d533c40f39f47bf73b1cff77c65c
+      internalID: -1820212751
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fuego_Barril_1
+      name: LLaves_ConBrillos_1
       rect:
         serializedVersion: 2
-        x: 33
-        y: 2
-        width: 25
-        height: 39
+        x: 51
+        y: 0
+        width: 43
+        height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -188,20 +188,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a5c7a4bf4434d3646b0cfc9acdec2aa6
-      internalID: 1968646804
+      spriteID: 93caa1bcab7326343b03fb2d7c14c314
+      internalID: -812866265
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fuego_Barril_2
+      name: LLaves_ConBrillos_2
       rect:
         serializedVersion: 2
-        x: 63
-        y: 2
-        width: 25
-        height: 39
+        x: 102
+        y: 0
+        width: 43
+        height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -209,20 +209,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb13535f7165b38449fd3d63fba49800
-      internalID: 1999462378
+      spriteID: 54a7c6aae49ef72468aba0fc6165b43d
+      internalID: 272813527
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fuego_Barril_3
+      name: LLaves_ConBrillos_3
       rect:
         serializedVersion: 2
-        x: 93
-        y: 2
-        width: 25
-        height: 39
+        x: 153
+        y: 0
+        width: 43
+        height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -230,20 +230,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c1e870d150e50947a2b66664f715d81
-      internalID: 1438713466
+      spriteID: 88d3485115d944549bdbd2391a7daabe
+      internalID: 638413837
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fuego_Barril_4
+      name: LLaves_ConBrillos_4
       rect:
         serializedVersion: 2
-        x: 123
-        y: 2
-        width: 25
-        height: 39
+        x: 204
+        y: 0
+        width: 43
+        height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -251,8 +251,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48db49ba472e3e241b7473a13cffb99a
-      internalID: 873884158
+      spriteID: d4f5254463247ae4e977b1dbc5331f00
+      internalID: -741807435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LLaves_ConBrillos_5
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 0
+        width: 43
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 496bd42ded494eb43991d59f29b0bb17
+      internalID: -2137223393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LLaves_ConBrillos_6
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 0
+        width: 43
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b132755fa8149d548aa69ae29ab84689
+      internalID: 1538266636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LLaves_ConBrillos_7
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 0
+        width: 43
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74b41b2a5de996043bfc42d3bd867936
+      internalID: -824832422
       vertices: []
       indices: 
       edges: []
@@ -268,11 +331,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Fuego_Barril_2: 1999462378
-      Fuego_Barril_3: 1438713466
-      Fuego_Barril_1: 1968646804
-      Fuego_Barril_0: -349737009
-      Fuego_Barril_4: 873884158
+      LLaves_ConBrillos_1: -812866265
+      LLaves_ConBrillos_6: 1538266636
+      LLaves_ConBrillos_0: -1820212751
+      LLaves_ConBrillos_5: -2137223393
+      LLaves_ConBrillos_7: -824832422
+      LLaves_ConBrillos_3: 638413837
+      LLaves_ConBrillos_2: 272813527
+      LLaves_ConBrillos_4: -741807435
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
