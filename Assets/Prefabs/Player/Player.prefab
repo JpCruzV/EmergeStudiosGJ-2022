@@ -139,8 +139,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Hook: {fileID: 5097737410196240417, guid: 3f4f7caafef552144a8671908110db90, type: 3}
   OnVine: 0
-  speed: 0.02
-  doubleJumpForce: 10
+  speed: 0.04
+  doubleJumpForce: 27.5
   hasTeleported: 0
   hasFirePower: 0
   anim: {fileID: 0}
