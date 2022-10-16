@@ -18,4 +18,10 @@ public class KeyScript : MonoBehaviour {
 
         transform.position = new Vector3(InitPos.x, Mathf.Sin(Time.time * freq) * amp + InitPos.y, InitPos.z);
     }
+
+    private void OnTriggerEnter2D(Collider2D collision) {
+
+        GameEvents.current.KeyTriggerenter();
+        Destroy(this.gameObject);
+    }
 }
