@@ -116,7 +116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 1626341449}
-  _launchSpeed: 100
+  _launchSpeed: 50
   _rotateTime: 0.4
 --- !u!95 &1626341449
 Animator:
