@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 89409ce36079fe649b156c2a96b9de9b
+guid: 93f09fa45e944b14db7be5f7693a5963
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -153,12 +153,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: player_Flying-Recovered-Sheet_0
+      name: vueltastest-Sheet_0
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 1
-        width: 31
+        width: 32
         height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -167,19 +167,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac73bc35fd3c45f458ef460204f37039
-      internalID: 1822067084
+      spriteID: 0a3c9bb79ae404e42842e0ff151f6b8c
+      internalID: 1426710874
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_Flying-Recovered-Sheet_1
+      name: vueltastest-Sheet_1
       rect:
         serializedVersion: 2
-        x: 33
+        x: 32
         y: 1
-        width: 31
+        width: 32
         height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -188,19 +188,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b11285afc5b31064ea2d8a28948ca262
-      internalID: 406579772
+      spriteID: c6897a4d7a25f404e800afd12fc4ad1d
+      internalID: 731982511
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_Flying-Recovered-Sheet_2
+      name: vueltastest-Sheet_2
       rect:
         serializedVersion: 2
-        x: 65
+        x: 64
         y: 1
-        width: 31
+        width: 32
         height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -209,19 +209,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92121853edc59074ca775f9fe01d98cc
-      internalID: 544114185
+      spriteID: d2725e525dbe03d4281a02432ebfe428
+      internalID: 1256311796
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_Flying-Recovered-Sheet_3
+      name: vueltastest-Sheet_3
       rect:
         serializedVersion: 2
-        x: 97
+        x: 96
         y: 1
-        width: 31
+        width: 32
         height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -230,19 +230,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3124e2e21247594daddc8c2157b10d6
-      internalID: 772608184
+      spriteID: cf27911b958991748bd30e31b99b301b
+      internalID: 1108617614
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_Flying-Recovered-Sheet_4
+      name: vueltastest-Sheet_4
       rect:
         serializedVersion: 2
-        x: 129
+        x: 128
         y: 1
-        width: 31
+        width: 32
         height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -251,19 +251,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f05e20848938d2c4d98ddab459f9b138
-      internalID: 281516687
+      spriteID: 81b7a964b39797b45a85c0ba78883d11
+      internalID: -2122388323
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_Flying-Recovered-Sheet_5
+      name: vueltastest-Sheet_5
       rect:
         serializedVersion: 2
-        x: 161
+        x: 160
         y: 1
-        width: 31
+        width: 32
         height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -272,29 +272,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a08cad5701442824cadb1142f3b2d1b7
-      internalID: -763573199
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player_Flying-Recovered-Sheet_6
-      rect:
-        serializedVersion: 2
-        x: 193
-        y: 1
-        width: 31
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ddb9957648655bc4faf65bd093a63cdb
-      internalID: -1818574969
+      spriteID: af5b7aa5e019ea940b1ecd5aa150f8d5
+      internalID: 1342208790
       vertices: []
       indices: 
       edges: []
@@ -310,13 +289,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      player_Flying-Recovered-Sheet_2: 544114185
-      player_Flying-Recovered-Sheet_4: 281516687
-      player_Flying-Recovered-Sheet_5: -763573199
-      player_Flying-Recovered-Sheet_6: -1818574969
-      player_Flying-Recovered-Sheet_3: 772608184
-      player_Flying-Recovered-Sheet_0: 1822067084
-      player_Flying-Recovered-Sheet_1: 406579772
+      vueltastest-Sheet_2: 1256311796
+      vueltastest-Sheet_4: -2122388323
+      vueltastest-Sheet_3: 1108617614
+      vueltastest-Sheet_0: 1426710874
+      vueltastest-Sheet_1: 731982511
+      vueltastest-Sheet_5: 1342208790
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 89409ce36079fe649b156c2a96b9de9b
+guid: cc776b750b497244da4304faff515356
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -153,13 +153,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: player_Flying-Recovered-Sheet_0
+      name: portal-Sheet_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 1
-        width: 31
-        height: 30
+        x: 4
+        y: 0
+        width: 23
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,20 +167,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac73bc35fd3c45f458ef460204f37039
-      internalID: 1822067084
+      spriteID: 9bd9f250f8acbb741a81e8f0e66f3e68
+      internalID: -701540087
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_Flying-Recovered-Sheet_1
+      name: portal-Sheet_1
       rect:
         serializedVersion: 2
-        x: 33
-        y: 1
-        width: 31
-        height: 30
+        x: 36
+        y: 0
+        width: 23
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -188,20 +188,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b11285afc5b31064ea2d8a28948ca262
-      internalID: 406579772
+      spriteID: 0792b2642d17fdf4c851b0b29844b089
+      internalID: 239989111
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_Flying-Recovered-Sheet_2
+      name: portal-Sheet_2
       rect:
         serializedVersion: 2
-        x: 65
-        y: 1
-        width: 31
-        height: 30
+        x: 68
+        y: 0
+        width: 23
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -209,20 +209,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92121853edc59074ca775f9fe01d98cc
-      internalID: 544114185
+      spriteID: 1e034f70877d57c458ba20f54067ac13
+      internalID: 956668032
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_Flying-Recovered-Sheet_3
+      name: portal-Sheet_3
       rect:
         serializedVersion: 2
-        x: 97
-        y: 1
-        width: 31
-        height: 30
+        x: 100
+        y: 0
+        width: 23
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -230,20 +230,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3124e2e21247594daddc8c2157b10d6
-      internalID: 772608184
+      spriteID: 7e96613017537404baef3fc23dd780ab
+      internalID: -1733755642
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_Flying-Recovered-Sheet_4
+      name: portal-Sheet_4
       rect:
         serializedVersion: 2
-        x: 129
-        y: 1
-        width: 31
-        height: 30
+        x: 132
+        y: 0
+        width: 23
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -251,20 +251,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f05e20848938d2c4d98ddab459f9b138
-      internalID: 281516687
+      spriteID: 63c3c88859d9ee742a519d0452e945bf
+      internalID: 374314764
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_Flying-Recovered-Sheet_5
+      name: portal-Sheet_5
       rect:
         serializedVersion: 2
-        x: 161
-        y: 1
-        width: 31
-        height: 30
+        x: 164
+        y: 0
+        width: 23
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -272,20 +272,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a08cad5701442824cadb1142f3b2d1b7
-      internalID: -763573199
+      spriteID: c7c965c638c6bc7438147eed7feb1732
+      internalID: -971196297
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_Flying-Recovered-Sheet_6
+      name: portal-Sheet_6
       rect:
         serializedVersion: 2
-        x: 193
-        y: 1
-        width: 31
-        height: 30
+        x: 196
+        y: 0
+        width: 23
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -293,8 +293,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ddb9957648655bc4faf65bd093a63cdb
-      internalID: -1818574969
+      spriteID: b53542ae80d6805469d9f6fe78b52c53
+      internalID: -1977162722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 0
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43cfd137c9afa5a419d73baa68fe79ec
+      internalID: 841480627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 0
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d57369348c6ace24e9fa9de44605b16b
+      internalID: -172264669
       vertices: []
       indices: 
       edges: []
@@ -310,13 +352,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      player_Flying-Recovered-Sheet_2: 544114185
-      player_Flying-Recovered-Sheet_4: 281516687
-      player_Flying-Recovered-Sheet_5: -763573199
-      player_Flying-Recovered-Sheet_6: -1818574969
-      player_Flying-Recovered-Sheet_3: 772608184
-      player_Flying-Recovered-Sheet_0: 1822067084
-      player_Flying-Recovered-Sheet_1: 406579772
+      portal-Sheet_3: -1733755642
+      portal-Sheet_2: 956668032
+      portal-Sheet_7: 841480627
+      portal-Sheet_5: -971196297
+      portal-Sheet_8: -172264669
+      portal-Sheet_1: 239989111
+      portal-Sheet_4: 374314764
+      portal-Sheet_0: -701540087
+      portal-Sheet_6: -1977162722
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

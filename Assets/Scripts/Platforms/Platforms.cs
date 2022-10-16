@@ -38,12 +38,6 @@ public class Platforms : MonoBehaviour {
         }
 
 
-        else if (playerRef.GetComponent<PlayerController>().hasFirePower == true && id == 2) {
-
-            playerRef.GetComponent<PlayerController>().hasFirePower = false;
-            Destroy(this.gameObject);
-        }
-
         else if (id == 3) {
 
             collision.gameObject.GetComponent<Rigidbody2D>().AddForce(transform.right * force, ForceMode2D.Impulse);

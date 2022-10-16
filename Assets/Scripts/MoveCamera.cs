@@ -5,24 +5,16 @@ using UnityEngine;
 public class MoveCamera : MonoBehaviour {
 
     [SerializeField] GameObject playerRef;
-    [SerializeField] Transform EndRef;
     [HideInInspector] public bool onPlayer = false;
-    Vector3 endPos;
     Vector3 playerPos;
     bool stopCinematic = false;
     [HideInInspector] public bool teleportedToPlayer = false;
-
-    private void Start() {
-
-        endPos = new Vector3(EndRef.transform.position.x, 0, -10);
-        transform.position = endPos;
-    }
 
 
     private void Update() {
 
 
-        playerPos = new Vector3(playerRef.transform.position.x + 10, 0, -10);
+        playerPos = new Vector3(playerRef.transform.position.x, playerRef.transform.position.y, -10);
 
         if (playerRef.GetComponent<PlayerController>().hasTeleported == true && teleportedToPlayer == false) {
 
@@ -32,8 +24,16 @@ public class MoveCamera : MonoBehaviour {
 
         if(transform.position != playerPos) {
 
-            transform.position = Vector3.MoveTowards(transform.position, playerPos, Time.deltaTime * 15);
+            if (playerPos.y > -5)
+                transform.position = Vector3.MoveTowards(transform.position, playerPos, Time.deltaTime * 50);
+
+
+            else if (playerPos.y <= -5) {
+                Vector3 newPlayerPos = new Vector3(playerRef.transform.position.x, 2, -10);
+                transform.position = Vector3.MoveTowards(transform.position, newPlayerPos, Time.deltaTime * 50);
+            }
         }
+
 
         if (this.transform.position == playerPos && stopCinematic == false) {
 

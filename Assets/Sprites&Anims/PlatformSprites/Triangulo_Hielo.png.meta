@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 89409ce36079fe649b156c2a96b9de9b
+guid: e3489dab5d3c39945ac92960b08f2c8f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -153,13 +153,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: player_Flying-Recovered-Sheet_0
+      name: Triangulo_Hielo_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 1
-        width: 31
-        height: 30
+        x: 5
+        y: 5
+        width: 23
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,20 +167,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac73bc35fd3c45f458ef460204f37039
-      internalID: 1822067084
+      spriteID: 3a8bc08cb5875704997d93867b432cdd
+      internalID: 620975046
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_Flying-Recovered-Sheet_1
+      name: Triangulo_Hielo_1
       rect:
         serializedVersion: 2
-        x: 33
-        y: 1
-        width: 31
-        height: 30
+        x: 37
+        y: 5
+        width: 23
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -188,20 +188,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b11285afc5b31064ea2d8a28948ca262
-      internalID: 406579772
+      spriteID: 5d29012f71749a34a98068d871ad67e3
+      internalID: -710167533
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_Flying-Recovered-Sheet_2
+      name: Triangulo_Hielo_2
       rect:
         serializedVersion: 2
-        x: 65
-        y: 1
-        width: 31
-        height: 30
+        x: 69
+        y: 5
+        width: 23
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -209,20 +209,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92121853edc59074ca775f9fe01d98cc
-      internalID: 544114185
+      spriteID: 41656bd8e9db7974f90470f231e8f363
+      internalID: -361168006
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_Flying-Recovered-Sheet_3
+      name: Triangulo_Hielo_3
       rect:
         serializedVersion: 2
-        x: 97
-        y: 1
-        width: 31
-        height: 30
+        x: 101
+        y: 5
+        width: 23
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -230,20 +230,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3124e2e21247594daddc8c2157b10d6
-      internalID: 772608184
+      spriteID: 9e30869ef2f06114e937d860b3c0172a
+      internalID: -1456480889
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_Flying-Recovered-Sheet_4
+      name: Triangulo_Hielo_4
       rect:
         serializedVersion: 2
-        x: 129
-        y: 1
-        width: 31
-        height: 30
+        x: 133
+        y: 5
+        width: 23
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -251,20 +251,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f05e20848938d2c4d98ddab459f9b138
-      internalID: 281516687
+      spriteID: f8fc880a835e8f44cabe772a00dc35ec
+      internalID: -755375625
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_Flying-Recovered-Sheet_5
+      name: Triangulo_Hielo_5
       rect:
         serializedVersion: 2
-        x: 161
-        y: 1
-        width: 31
-        height: 30
+        x: 165
+        y: 5
+        width: 23
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -272,20 +272,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a08cad5701442824cadb1142f3b2d1b7
-      internalID: -763573199
+      spriteID: 6dcb1da8d106acd43a3c9b706cba95ad
+      internalID: -1893955022
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_Flying-Recovered-Sheet_6
+      name: Triangulo_Hielo_6
       rect:
         serializedVersion: 2
-        x: 193
-        y: 1
-        width: 31
-        height: 30
+        x: 197
+        y: 5
+        width: 23
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -293,8 +293,155 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ddb9957648655bc4faf65bd093a63cdb
-      internalID: -1818574969
+      spriteID: 5df7b4889d493724ab6a7bef7c076011
+      internalID: -1232454419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangulo_Hielo_7
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 5
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a14e3d315a905f44c862bafaa5535141
+      internalID: 1965021697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangulo_Hielo_8
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 5
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 094153a1fec0a3444b55e1e148d5d850
+      internalID: 524913375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangulo_Hielo_9
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 5
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b34ffd4a7d2192459fa7c70fb518c48
+      internalID: 1992281901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangulo_Hielo_10
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 5
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe2fb01a8ddb0a441972272f55c9c98b
+      internalID: 880172803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangulo_Hielo_11
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 5
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec5f9fa0daa34734cb56f5c9dc097d1f
+      internalID: -447105398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangulo_Hielo_12
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 5
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 465a2483fc7d2884b849b9794de2806a
+      internalID: 1869550544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangulo_Hielo_13
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 5
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7fd2bccacf1674439fa880d6bbe3a86
+      internalID: -2061832305
       vertices: []
       indices: 
       edges: []
@@ -310,13 +457,20 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      player_Flying-Recovered-Sheet_2: 544114185
-      player_Flying-Recovered-Sheet_4: 281516687
-      player_Flying-Recovered-Sheet_5: -763573199
-      player_Flying-Recovered-Sheet_6: -1818574969
-      player_Flying-Recovered-Sheet_3: 772608184
-      player_Flying-Recovered-Sheet_0: 1822067084
-      player_Flying-Recovered-Sheet_1: 406579772
+      Triangulo_Hielo_4: -755375625
+      Triangulo_Hielo_7: 1965021697
+      Triangulo_Hielo_10: 880172803
+      Triangulo_Hielo_3: -1456480889
+      Triangulo_Hielo_0: 620975046
+      Triangulo_Hielo_9: 1992281901
+      Triangulo_Hielo_13: -2061832305
+      Triangulo_Hielo_11: -447105398
+      Triangulo_Hielo_2: -361168006
+      Triangulo_Hielo_12: 1869550544
+      Triangulo_Hielo_6: -1232454419
+      Triangulo_Hielo_1: -710167533
+      Triangulo_Hielo_8: 524913375
+      Triangulo_Hielo_5: -1893955022
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

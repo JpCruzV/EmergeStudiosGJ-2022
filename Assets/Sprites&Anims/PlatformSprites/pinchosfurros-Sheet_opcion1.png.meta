@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 89409ce36079fe649b156c2a96b9de9b
+guid: b25d22a8ce02e2c4a947ecd8e1b4ee70
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -153,13 +153,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: player_Flying-Recovered-Sheet_0
+      name: pinchosfurros-Sheet_opcion1_0
       rect:
         serializedVersion: 2
         x: 1
-        y: 1
-        width: 31
-        height: 30
+        y: 0
+        width: 30
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,20 +167,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac73bc35fd3c45f458ef460204f37039
-      internalID: 1822067084
+      spriteID: a96da653622d9a142b87cf19b44ffc1f
+      internalID: -1962305643
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_Flying-Recovered-Sheet_1
+      name: pinchosfurros-Sheet_opcion1_1
       rect:
         serializedVersion: 2
         x: 33
-        y: 1
-        width: 31
-        height: 30
+        y: 0
+        width: 30
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -188,20 +188,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b11285afc5b31064ea2d8a28948ca262
-      internalID: 406579772
+      spriteID: 32c9e48dbb53aef429909ea153e9e3fe
+      internalID: -1945372685
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_Flying-Recovered-Sheet_2
+      name: pinchosfurros-Sheet_opcion1_2
       rect:
         serializedVersion: 2
         x: 65
-        y: 1
-        width: 31
-        height: 30
+        y: 0
+        width: 30
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -209,20 +209,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92121853edc59074ca775f9fe01d98cc
-      internalID: 544114185
+      spriteID: 09a7305cf0f1fd241ab4d1c367bad9cc
+      internalID: 596130364
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_Flying-Recovered-Sheet_3
+      name: pinchosfurros-Sheet_opcion1_3
       rect:
         serializedVersion: 2
         x: 97
-        y: 1
-        width: 31
-        height: 30
+        y: 0
+        width: 30
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -230,20 +230,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3124e2e21247594daddc8c2157b10d6
-      internalID: 772608184
+      spriteID: e034f0250fcae054a91dc9991b337c2c
+      internalID: 1731156917
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_Flying-Recovered-Sheet_4
+      name: pinchosfurros-Sheet_opcion1_4
       rect:
         serializedVersion: 2
         x: 129
-        y: 1
-        width: 31
-        height: 30
+        y: 0
+        width: 30
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -251,20 +251,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f05e20848938d2c4d98ddab459f9b138
-      internalID: 281516687
+      spriteID: afc5c6caa0585f849b087b4bb71dd4b9
+      internalID: 1702420118
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_Flying-Recovered-Sheet_5
+      name: pinchosfurros-Sheet_opcion1_5
       rect:
         serializedVersion: 2
         x: 161
-        y: 1
-        width: 31
-        height: 30
+        y: 0
+        width: 30
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -272,20 +272,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a08cad5701442824cadb1142f3b2d1b7
-      internalID: -763573199
+      spriteID: 016732dc1d72ec44897feaed6258c1a6
+      internalID: -2122084169
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_Flying-Recovered-Sheet_6
+      name: pinchosfurros-Sheet_opcion1_6
       rect:
         serializedVersion: 2
         x: 193
-        y: 1
-        width: 31
-        height: 30
+        y: 0
+        width: 30
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -293,8 +293,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ddb9957648655bc4faf65bd093a63cdb
-      internalID: -1818574969
+      spriteID: 3fc6af65d745bc446a43e3410d60ad20
+      internalID: -2076214300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinchosfurros-Sheet_opcion1_7
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 0
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6300483bd20f6f449a0533bc894e02ff
+      internalID: -826759330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinchosfurros-Sheet_opcion1_8
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 0
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57a41ea1b6fb924408cddcb5c78d738a
+      internalID: -595609130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinchosfurros-Sheet_opcion1_9
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 0
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9432032af60efc24e9e0294409b7f3e8
+      internalID: -1555087348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinchosfurros-Sheet_opcion1_10
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 0
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 010b8fe156e210746a7c1a6d559e303f
+      internalID: -187721218
       vertices: []
       indices: 
       edges: []
@@ -310,13 +394,17 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      player_Flying-Recovered-Sheet_2: 544114185
-      player_Flying-Recovered-Sheet_4: 281516687
-      player_Flying-Recovered-Sheet_5: -763573199
-      player_Flying-Recovered-Sheet_6: -1818574969
-      player_Flying-Recovered-Sheet_3: 772608184
-      player_Flying-Recovered-Sheet_0: 1822067084
-      player_Flying-Recovered-Sheet_1: 406579772
+      pinchosfurros-Sheet_opcion1_8: -595609130
+      pinchosfurros-Sheet_opcion1_3: 1731156917
+      pinchosfurros-Sheet_opcion1_9: -1555087348
+      pinchosfurros-Sheet_opcion1_6: -2076214300
+      pinchosfurros-Sheet_opcion1_5: -2122084169
+      pinchosfurros-Sheet_opcion1_2: 596130364
+      pinchosfurros-Sheet_opcion1_4: 1702420118
+      pinchosfurros-Sheet_opcion1_10: -187721218
+      pinchosfurros-Sheet_opcion1_0: -1962305643
+      pinchosfurros-Sheet_opcion1_1: -1945372685
+      pinchosfurros-Sheet_opcion1_7: -826759330
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

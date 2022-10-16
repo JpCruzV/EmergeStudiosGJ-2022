@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour {
 
@@ -39,68 +40,47 @@ public class PlayerController : MonoBehaviour {
     [SerializeField] float speed;
     [SerializeField] float doubleJumpForce;
     Rigidbody2D rb;
-    float HorizontalInput;
+    Vector2 inputValue;
 
 
     [HideInInspector] public bool hasTeleported = false;
-    bool onCannon = false;
-    bool hasShot = false;
 
     //PowerUp
     bool hasWindPower = false;
     [HideInInspector] public bool hasFirePower = false;
     SpriteRenderer sprite;
 
-    float buttonCooldown = .5f;
-    int buttonCount = 0;
+    [SerializeField] Animator anim;
+    string curSceneName;
 
     void myInput() {
 
-        if (cam.GetComponent<MoveCamera>().onPlayer == true || onCannon == true) {
+        if (cam.GetComponent<MoveCamera>().onPlayer == true) { // && !_grabbedByCannon) {
 
-            HorizontalInput = Input.GetAxis("Horizontal");
-            Vector2 dir = new Vector2(HorizontalInput, 0);
+            inputValue.x = Input.GetAxis("Horizontal");
+            Vector2 dir = new Vector2(inputValue.x, 0);
             rb.AddForce(dir * speed, ForceMode2D.Impulse);
+            anim.SetFloat("Horizontal", inputValue.x);
+            anim.SetFloat("Speed", inputValue.sqrMagnitude);
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) && OnVine == true) {
+        if (Input.GetKeyDown(KeyCode.Space)) {
 
-            OnVine = false;
-            doneWithVine = false;
-        }
+            if (OnVine) {
 
-
-        else if (Input.GetKeyDown(KeyCode.Space) && OnVine == false && onCannon == true) {
-
-            hasShot = true;
-            onCannon = false;
-            this.rb.gravityScale = 1;
-
-        }
-
-
-        //DoubleTap
-        else if ((Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) && hasWindPower == true && OnVine == false) {
-
-            if (buttonCooldown > 0 && buttonCount == 1) {
+                OnVine = false;
+                doneWithVine = false; 
+	        }
+            else if(_grabbedByCannon) {
+                
+                LaunchBall();
+            }
+            else if (hasWindPower == true && !_grabbedByCannon) {
 
                 hasWindPower = false;
                 rb.AddForce(transform.up * doubleJumpForce, ForceMode2D.Impulse);
             }
-            else {
-
-                buttonCooldown = .5f;
-                buttonCount += 1;
-            }
         }
-
-
-        if (buttonCooldown > 0) {
-
-            buttonCooldown -= 1 * Time.deltaTime;
-        }
-        else
-            buttonCount = 0;
     }
 
 
@@ -113,40 +93,50 @@ public class PlayerController : MonoBehaviour {
         cam = GameObject.FindGameObjectWithTag("MainCamera");
     }
 
+    private void Start() {
+
+        curSceneName = SceneManager.GetActiveScene().ToString();
+    }
 
     private void Update() {
 
         SavingPortal();
         myInput();
         VineLogic();
+        if (hasFirePower == false) {
+
+            sprite.color = new Color(1, 1, 1, 1f);
+        }
+        if ( transform.position.y < -15 ) {
+
+            RestartLevel();
+        }
+    }
+
+
+    void RestartLevel() {
+
+        SceneManager.LoadScene("Nivel 1");
     }
 
 
     private void OnTriggerEnter2D(Collider2D collision) {
 
-        if (collision.tag == "Vine")
-        {
+        if (collision.tag == "Vine") {
 
             destiny = collision.transform.position;
             OnVine = true;
         }
 
-        if (collision.tag == "Wind")
-        {
+        if (collision.tag == "Wind") {
 
             hasWindPower = true;
         }
 
-        if (collision.tag == "Fire")
-        {
+        if (collision.tag == "Fire") {
 
             hasFirePower = true;
-            sprite.color = new Color(1, 0, 0, .8f);
-        }
-
-        if (hasFirePower == false) {
-
-            sprite.color = new Color(1, 1, 1, 1f);
+            sprite.color = new Color(1, .6f, .6f, .8f);
         }
 
         if (collision.tag == "Portal" && hasTeleported == false) {
@@ -155,8 +145,9 @@ public class PlayerController : MonoBehaviour {
             hasTeleported = true;
             GameObject[] portals = GameObject.FindGameObjectsWithTag("Portal");
             Transform CurPortal;
-            
-            do {
+
+            do
+            {
                 CurPortal = portals[Random.Range(0, portals.Length)].transform;
             }
             while (Vector3.Distance(CurPortal.position, this.transform.position) < 2);
@@ -164,24 +155,12 @@ public class PlayerController : MonoBehaviour {
             StartCoroutine(PortalCooldown());
         }
 
-        if (collision.tag == "Cannon" && onCannon == false) {
+        if (collision.tag == "Spikes") {
 
-            onCannon = true;
-            this.rb.gravityScale = 0;
-            StartCoroutine(waitingForShot());
+            RestartLevel();
         }
     }
 
-    IEnumerator waitingForShot() {
-        
-        while (hasShot == false) {
-
-            Quaternion rotateTo = Quaternion.Euler(0, 0, 30);
-            transform.rotation = Quaternion.Slerp(transform.rotation, rotateTo, Time.deltaTime * 10);
-            yield return new WaitForSeconds(1.5f);
-        }
-        
-    }
 
     IEnumerator PortalCooldown() {
         yield return new WaitForSeconds(3);
@@ -189,19 +168,57 @@ public class PlayerController : MonoBehaviour {
     }
 
 
-    [SerializeField] GameObject portal;
+    private void SavingPortal()
+    {
 
-
-    private void SavingPortal() {
-
-        if (Input.GetMouseButtonDown(0)) {
+        if (Input.GetMouseButtonDown(0))
+        {
 
             Vector2 mousePos = Input.mousePosition;
             Vector2 objectPos = Camera.main.ScreenToWorldPoint(mousePos);
-            if (objectPos.y < 0) {
+            if (objectPos.y < 0)
+            {
 
-                Instantiate(portal, objectPos, Quaternion.identity);
+                GameObject instantiatedPortal = Instantiate(portal, objectPos, Quaternion.identity);
+
+                Destroy(instantiatedPortal, 3);
             }
         }
     }
+
+
+
+    /// <summary>
+    /// Cannon
+    /// </summary>
+
+    #region Cannon
+    [SerializeField] GameObject portal;
+    private Cannon _cannonGrabbingMe;
+    private bool _grabbedByCannon;
+
+    public void SetGrabbedByCannon(Cannon pCannon)
+    {
+        _cannonGrabbingMe = pCannon;
+        _grabbedByCannon = true;
+
+        rb.isKinematic = true;
+        rb.velocity = Vector2.zero;
+        rb.angularVelocity = 0f;
+
+        this.transform.position = pCannon.transform.position;
+    }
+
+    public void LaunchBall() {
+
+        if(_cannonGrabbingMe != null) {
+
+            rb.isKinematic = false;
+            rb.velocity = _cannonGrabbingMe.transform.up * _cannonGrabbingMe.GetLaunchSpeed();
+
+            _cannonGrabbingMe.ReleasePlayer();
+            _cannonGrabbingMe = null;
+        }
+    }
+    #endregion
 }
