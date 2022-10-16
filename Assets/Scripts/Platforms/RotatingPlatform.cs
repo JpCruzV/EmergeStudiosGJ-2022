@@ -10,6 +10,8 @@ public class RotatingPlatform : MonoBehaviour {
     [SerializeField]
     private float _rotateTime = 1.5f;
 
+    [SerializeField] float force = 15;
+
     private float _timeToRotate;
 
     private int _rotationIndex = 0;
@@ -43,7 +45,7 @@ public class RotatingPlatform : MonoBehaviour {
 
         anim.SetBool("Bounce", true);
         StartCoroutine(waitForAnim());
-        collision.gameObject.GetComponent<Rigidbody2D>().AddForce(transform.up * 15, ForceMode2D.Impulse);
+        collision.gameObject.GetComponent<Rigidbody2D>().AddForce(transform.up * force, ForceMode2D.Impulse);
     }
 
     IEnumerator waitForAnim() {
