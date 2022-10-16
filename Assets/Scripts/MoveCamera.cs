@@ -13,6 +13,11 @@ public class MoveCamera : MonoBehaviour {
     float posx = 0;
     float posy = 0;
 
+    private void Start() {
+
+        onPlayer = true;
+    }
+
     private void Update() {
 
 
