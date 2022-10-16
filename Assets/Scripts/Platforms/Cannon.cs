@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class Cannon : MonoBehaviour
 {
+    [SerializeField] Animator anim;
+
     [SerializeField]
     private float _launchSpeed = 1f;
 
@@ -70,6 +72,14 @@ public class Cannon : MonoBehaviour
 
     public void ReleasePlayer()
     {
+        anim.SetBool("Launch", true);
+        StartCoroutine(waitForAnim());
         _isGrabbingPlayer = false;
+    }
+
+    IEnumerator waitForAnim() {
+
+        yield return new WaitForSeconds(1f);
+        anim.SetBool("Launch", false);
     }
 }
